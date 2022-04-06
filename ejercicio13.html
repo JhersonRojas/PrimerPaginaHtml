@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, GitHub!</title>
+
+ </head>
+ <body>
+
+    <style>
+        body{
+       background:url(https://fondosmil.com/fondo/9846.jpg) no-repeat fixed;
+       background-size:cover; 
+   }
+   .menu{
+       margin-left: 1%;
+       margin-top: 1%;
+   }
+   </style>
+
+   <div class="menu">
+    <h1 class="text-center mt-5 display-4 text-primary"> Comparativa de números </h1>
+
+    <h4><li><a href="index.html">Menu de inicio</a> </li></h4> 
+     
+    <p>Desarrolle un algoritmo que permita leer dos números distintos y determinar cuál de los <br>
+        dos valores es el menor y escribirlo.</p>
+
+    <input id="num1"><br>
+    <input id="num2"><br>
+
+    <button type="button" onclick="enviar()">Comparativa de números</button>
+    </div>
+
+<script>
+    function enviar(){
+
+        var n1 = document.getElementById('num1').value;
+        var n2 = document.getElementById('num2').value;
+
+        if ( n1 > n2 ){
+            alert ("El número " + n1 + " es mayor")
+        }
+        else {
+            alert ("El número " + n2 + " es mayor")
+        }
+    }
+    
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+
+ </body>
+</html>

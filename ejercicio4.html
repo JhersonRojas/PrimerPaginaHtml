@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, GitHub!</title>
+
+ </head>
+ <body>
+
+    <style>
+        body{
+       background:url(https://fondosmil.com/fondo/9846.jpg) no-repeat fixed;
+       background-size:cover; 
+   }
+   .menu{
+       margin-left: 1%;
+       margin-top: 1%;
+   }
+   </style>
+
+    <h1 class="text-center mt-5 display-4 text-primary"> Volumen de un cilindro</h1>
+
+    <div class="menu">
+
+     <h4><li><a href="index.html">Menu de inicio</a> </li></h4>  
+
+    <p>Calcular el volumen de un cilindro dado su altura y su diámetro.</p>
+
+    <input id="num1" placeholder="Altura del cilindro en cm"><br>
+    <input id="num2" placeholder="Radio del cilindro en cm"><br> 
+    <button type="button" onclick="myFunction()">enviar</button>  
+
+    <p id="resultado"></p> 
+
+    </div>
+ <script>  
+    function myFunction() {    
+
+    var  altura = document.getElementById("num1").value;  
+    var  radio = document.getElementById("num2").value;  
+
+    x = parseFloat(radio)*parseFloat(radio);
+    
+        y = (3.14) * parseFloat(x) ;
+
+            final = y * parseFloat(altura) ;
+
+        alert ("El volumen del cilindro es: "+ final+ "cm3")
+
+            document.getElementById("sumando").innerHTML = text;  
+    }  
+
+</script>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+
+ </body>
+</html>

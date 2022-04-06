@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, GitHub!</title>
+
+ </head>
+ <body>
+
+    <style>
+        body{
+       background:url(https://fondosmil.com/fondo/9846.jpg) no-repeat fixed;
+       background-size:cover; 
+   }
+   .menu{
+       margin-left: 1%;
+       margin-top: 1%;
+   }
+   </style>
+
+   <div class="menu">
+    <h1 class="text-center mt-5 display-4 text-primary"> Positivo o negativo </h1>
+
+    <h4><li><a href="index.html">Menu de inicio</a> </li></h4> 
+     
+    <p>Elabore un algoritmo que lea un número e indique si este es positivo o negativo.</p>
+
+    <input id="num1" type="number"><br>
+
+    <button type="button" onclick="enviar()">enviar</button>
+    </div>
+
+<script>
+    function enviar(){
+
+        var n1 = document.getElementById('num1').value;
+
+        if ( n1==0 ){
+            alert ("El número es neutro")
+        }
+        else if (n1 < 0){
+            alert ("El número es negativo")
+        }
+        else {
+
+            alert ("El número es positivo") 
+        }
+    }
+    
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+
+ </body>
+</html>
