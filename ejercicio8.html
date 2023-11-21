@@ -1,65 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
- <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello, GitHub!</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
- </head>
- <body>
-    <style>
-        body{
-       background:url(https://fondosmil.com/fondo/9846.jpg) no-repeat fixed;
-       background-size:cover; 
-   }
-   .menu{
-       margin-left: 1%;
-       margin-top: 1%;
-   }
-   </style>
+  <title>Hello, GitHub!</title>
+</head>
 
-    <h1 class="text-center mt-5 display-4 text-primary"> Cuantas cifras tiene  </h1>
-
-    <div class="menu">
-    <h4><li><a href="index.html">Menu de inicio</a> </li></h4>  
-
-    <p>Haga un programa el cual, al escribir un número este diga si tiene uno, dos o tres cifras. </p>
-    
-    <input id="numero">
-    <button type="button" onclick="enviar()">Enviar</button>
-
-    </div>
-
-<script>
-    function enviar(){
-       
-        var numero = document.getElementById('numero').value;
-
-        if (numero <10 ) {
-            alert ("El número es de una cifra")
-        }        
-        else if (numero >=10 && numero <100 ) {
-            alert ("El número es de dos cifras")
-        } 
-        else if (numero >= 100 && numero <1000){
-            alert ("El número es de tres cifras")
-        }
-        else if ( numero >=1000){
-
-            alert ("El número tiene más de tres cifras")
-        }
-        else { }
-
+<body>
+  <style>
+    body {
+      background: url(https://fondosmil.com/fondo/9846.jpg) no-repeat fixed;
+      background-size: cover;
     }
 
-</script>
+    .menu {
+      margin-left: 1%;
+      margin-top: 1%;
+    }
+  </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <h1 class="text-center mt-5 display-4 text-primary">
+    Cuantas cifras tiene
+  </h1>
 
+  <div class="menu">
+    <h4>
+      <li><a href="index.html">Menu de inicio</a></li>
+    </h4>
+
+    <p>
+      Haga un programa el cual, al escribir un número este diga si tiene uno,
+      dos o tres cifras.
+    </p>
+
+    <input id="numero" />
+    <button type="button" onclick="enviar()">Enviar</button>
+  </div>
+
+  <script>
+    function enviar() {
+      var numero = document.getElementById("numero").value;
+
+      if (numero < 10) {
+        alert("El número es de una cifra");
+      } else if (numero >= 10 && numero < 100) {
+        alert("El número es de dos cifras");
+      } else if (numero >= 100 && numero < 1000) {
+        alert("El número es de tres cifras");
+      } else if (numero >= 1000) {
+        alert("El número tiene más de tres cifras");
+      } else {
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
